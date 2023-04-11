@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nathan BOSCHI - Etudiant en Informatique | C.V.</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/loading.js"></script>
+    <style>
+        .top {
+            height: auto;
+            position: relative;
+            line-height: 30px;
+        }
+
+        body.black h1,
+        body.black h2,
+        body.black h3,
+        body.black h4,
+        body.black p,
+        body.black span,
+        body.black a {
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        span,
+        a {
+            color: black;
+        }
+    </style>
+    <script>
+        function toggleLight() {
+            if (!document.body.classList.contains('black')) {
+                document.body.classList.add('black')
+                document.getElementById('lightSwitch').classList.remove('fa-regular')
+                document.getElementById('lightSwitch').classList.add('fa-solid')
+
+            } else {
+                document.body.classList = null
+                document.getElementById('lightSwitch').classList.remove('fa-solid')
+                document.getElementById('lightSwitch').classList.add('fa-regular')
+            }
+        }
+
+        function cvDownloadPDF(){
+            window.open("../static/CV_Nathan_BOSCHI.pdf","_blank", null);
+        }
+    </script>
+</head>
+<body class="black">
+
+<div class="loading"></div>
+
+<header class="subPages">
+    <h1 class="secondary"><span class="primary">@</span>Nathan<span class="blue">.</span>Boschi<span
+            class="blue">.</span><span class="primary">_</span></h1>
+
+    <div class="menu">
+        <a href="../index.html">
+            <div class="menu-element">
+                Présentation
+            </div>
+        </a>
+        <a href="./portfolio.html">
+            <div class="menu-element">
+                Portfolio
+            </div>
+        </a>
+
+        <a href="https://github.com/nathanboschi25" target="_blank">
+            <div class="menu-element">
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/nboschi/" target="_blank">
+            <div class="menu-element">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </a>
+
+        <a href="mailto:nathan.boschi@edu.univ-fcomte.fr" target="_blank">
+            <div class="menu-element">
+                <i class="fa-solid fa-square-envelope fa-xl"></i>
+            </div>
+        </a>
+
+        <div class="menu-element light">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+        <a onclick="toggleLight();">
+            <div class="menu-element">
+                <i class="fa-solid fa-lightbulb fa-lg" id="lightSwitch"></i>
+            </div>
+        </a>
+
+        <a onclick="cvDownloadPDF();">
+            <div class="menu-element">
+                <i class="fa-regular fa-file-pdf fa-lg"></i>
+            </div>
+        </a>
+
+    </div>
+</header>
+<div class="body">
+    <div class="top">
+        <p>Etudiant en première année de BUT Informatique à l’IUT Nord Franche-Comté, département Informatique à
+            Belfort. Je développe mes compétences dans différents langages de programmation (Java, Python, PHP,
+            JavaScript, HTML, CSS) durant mon cursus à l’IUT et de façon autodidacte. Mes expériences en tant que
+            bénévole m’ont permis de développer mes compétences personnelles et professionnelles (Gestion de projet,
+            Autonomie, Précision, Assiduité).
+            <span class="important">
+                    Pour développer mes compétences et faire un lien avec le monde professionnel, je suis à la recherche
+                    d’une alternance dès l’année prochaine.
+                </span>
+            <img src="../static/Photo.jpg" alt="">
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Formation</h2>
+        <div class="element">
+            <span class="dates">En cours</span>
+            <span class="details"><b>BUT Informatique</b>, Université de Franche-Comté, IUT Nord Franche-Comté, Belfort</span>
+        </div>
+        <div class="element">
+            <span class="dates">2022</span>
+            <span class="details"><b>Baccalauréat Technologique - Sciences et Technologies de l’Industrie et du Développement Durable (STI2D) -
+Système d’Information et Numérique</b>, Mention Bien, Lycée Polyvalent Germaine Tillon, Montbéliard</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <div class="element">
+            <span class="dates">Jan. 2023</span>
+            <span class="details"><b>EF SET Certificate</b> - 60 Points - Niveau B2 Upper Intermediate (Anglais) - <a
+                    class="link" href="https://www.efset.org/cert/VAx3T2" target="_blank">Lien vers la certification</a></span>
+        </div>
+        <div class="element">
+            <span class="dates">2022</span>
+            <span class="details"><b>Certification PIX</b> - 248 points</span>
+        </div>
+        <div class="element">
+            <span class="dates">Mai 2018</span>
+            <span class="details"><b>Certificat Prévention et Secours Civiques de niveau 1</b> (PSC1)</span>
+        </div>
+    </div>
+
+    <div class="section experience">
+        <h2>Expérience et Bénévolat</h2>
+        <h4 class="secondary"><a href="./portfolio.html">Accéder au portfolio</a></h4>
+        <div class="element">
+            <span class="dates">
+                <span class="start">Aout 2021</span>
+                <span class="end">Aujourd'hui</span>
+            </span>
+            <span class="details">
+                <span class="title"><span class="blue">Bénévolat</span> / DÉVELOPPEMENT DES USAGES NUMÉRIQUES, Commune de Bretigney</span>
+                <div class="infos">
+                    <span>Construction et présentation au conseil municipal d’un projet global de transformation numérique</span>
+                    <span>Construction et suivi de dossiers de demande de subvention</span>
+                    <span>Mise en place de nouvelles machines client, configuration des solutions, conception et développement d’application web (Progiciel Gestion des Communications).</span>
+                    <span>Formation à l’utilisation des nouveaux outils</span>
+                </div>
+            </span>
+        </div>
+
+        <div class="element">
+            <span class="dates">
+                <span class="start">Novembre 2019</span>
+                <span class="end">Janvier 2023</span>
+            </span>
+            <span class="details">
+                <span class="title"><span class="blue">Bénévolat</span> / INFORMATIQUE - VENTE - ADMINISTRATION D’ENTREPRISE, Savonnerie ENOELAI</span>
+                <div class="infos">
+                    <span>Installation et configuration d’un site vitrine/e-commerce (Prestashop), d’un ERP-CRM (Dolibarr)</span>
+                    <span>Développement d’outils de gestion (Gestion des points de vente, Gestion des stocks)</span>
+                    <span>Vente de produits sur les marchés, salons.</span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projets tuteurés</h2>
+        <h4 class="secondary">Situations d'Aprentissage et d'Evaluation (SAE) - BUT Informatique</h4>
+
+        <div class="element">
+            <span class="dates">Semestre 2</span>
+            <span class="details">
+                <b>SAE S1. 1.2.6 - <a href="./portfolio.html#StuckWin">Jeu de la Mérelle</a></b> - <span class="blue">/ALGO/Anglais/Droit/</span> -
+                Développement du jeu de la Mérelle (Version Console et Graphique) - Développement d'ordinateurs de jeu - Etudes des règles de droit liées à la création d'un jeu
+                <!--                TODO Ajouter la partie anglais, préciser la partie DROIT-->
+            </span>
+        </div>
+
+        <div class="element">
+            <span class="dates">Semestre 2</span>
+            <span class="details">
+                <b>SAE S2. 3.4.5 - <a href="./portfolio.html#BikeUFC">BikeUFC</a></b> - <span class="blue">/BDD/WEB/Système/Gestion de Projet/</span> -
+                Développement d'un site e-commerce (Flask) - SQL - Visualisation de données - Gestion de projet
+                <!--                TODO Ajouter la partie système de la SAE-->
+            </span>
+        </div>
+
+
+        <div class="element">
+            <span class="dates">Semestre 1</span>
+            <span class="details">
+                <b>SAE S1. 01/02 - <a href="./portfolio.html#StuckWin">Jeu StuckWin</a></b> - <span
+                    class="blue">/ALGO/</span> -
+                Développement d'un mini-jeu - Développement de deux algorithmes type mini-IA pour un joueur 'Ordinateur" - Comparaison d'algorithmes.
+            </span>
+        </div>
+
+        <div class="element">
+            <span class="dates">Semestre 1</span>
+            <span class="details">
+                <b>SAE S1. 03/04 - <a href="./portfolio.html#EcoQuartier">EcoQuarier</a></b> - <span class="blue">/BDD/Système/</span> -
+                Mise en place d'une base de données pour permettre à une commune de mesurer différents indicatifs d'impact sur l'environnement d'un écoquartier - Proposition de configurations machines et configuration d'un poste de développement
+            </span>
+        </div>
+
+        <div class="element">
+            <span class="dates">Semestre 1</span>
+            <span class="details">
+                <b>SAE S1. 05/06 - <a href="./portfolio.html#ReCapgemini">ReCapgemini</a></b> - <span class="blue">/WEB/Economie/Communication Professionnelle/</span> -
+                Présentation organisationnelle et économique d'une entreprise du domaine numérique (Capgémini) au travers d'un site vitrine et d'un rapport économique.
+            </span>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

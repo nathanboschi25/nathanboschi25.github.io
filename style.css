@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+:root {
+    --dark-color: #475465;
+    --secondary-color: #556c96;
+    --blue-color: #B6CDE8;
+    --light-color: #EEEDFF;
+    --primary-color: #FF584D;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body.black {
+    background-color: #000000;
+}
+
+
+body div.loading {
+    position: absolute;
+    z-index: 5000;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.primary {
+    color: var(--primary-color) !important;
+}
+
+.secondary {
+    color: var(--secondary-color) !important;
+}
+
+.dark {
+    color: var(--dark-color) !important;
+}
+
+.light {
+    color: var(--light-color) !important;
+}
+
+.blue {
+    color: var(--blue-color) !important;
+}
+
+.primaryBg {
+    background-color: var(--primary-color);
+}
+
+.secondaryBg {
+    background-color: var(--secondary-color);
+}
+
+.darkBg {
+    background-color: var(--dark-color)
+}
+
+.lightBg {
+    background-color: var(--light-color)
+}
+
+.blueBg {
+    background-color: var(--blue-color)
+}
+
+
+header {
+    width: 100%;
+    height: 4em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.subPages {
+    --dark-color: #000000;
+    --secondary-color: #FFFFFF;
+    --blue-color: #B6CDE8;
+    --light-color: #EEEDFF;
+    --primary-color: #FF584D;
+    background-color: var(--dark-color);
+    position: unset;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 2em;
+    float: left;
+    font-size: 16pt;
+    font-family: 'Sono', sans-serif;
+}
+
+header .menu {
+    margin: 0;
+    margin-right: 2em;
+    float: right;
+    display: flex;
+    flex-flow: row;
+}
+
+header .menu a {
+    text-decoration: none;
+    margin-inline: 1.5em;
+    color: var(--secondary-color);
+}
+
+header .fa-brands {
+    font-size: 22px;
+}
+
+.top {
+    color: var(--light-color);
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+}
+
+body.black .top {
+    background-color: black;
+}
+
+body#presentation .top {
+    background-color: black;
+}
+
+.top .title {
+    font-size: 100px;
+    margin: 0;
+    margin-top: 33vh;
+    margin-left: 10vw;
+    position: relative;
+}
+
+.top .title .tinny {
+    color: var(--secondary-color);
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+}
+
+.top .title .subtitle {
+    color: var(--primary-color);
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+}
+
+.top .icon svg {
+    position: absolute;
+    bottom: 30vh;
+    right: 10vw;
+    font-size: 400px;
+    fill: var(--light-color);
+    height: 30vh;
+    display: block;
+}
+
+.top .icon svg {
+    transition: all 300ms ease-in-out;
+}
+
+.top .icon svg:hover {
+    transform: translate(40px, 40px);
+    height: calc(30vh + 80px);
+    fill: var(--primary-color);
+}
+
+.top p {
+    margin: 10vh 22vw 10vh 10vw;
+    text-align: justify;
+}
+
+.top p:first-letter {
+    font-size: 25px;
+}
+
+.top p img {
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    width: 8em;
+    border-radius: 5vw;
+}
+
+@media screen {
+
+}
+
+p span.important {
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+.blinker {
+    opacity: 1;
+    margin-bottom: -2px;
+    height: 15px;
+    margin-left: 4px;
+    border-right: 10px solid var(--primary-color);
+    animation: blinker 0.9s steps(2, start) infinite;
+}
+
+@keyframes blinker {
+    to {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top .icon svg {
+        display: none;
+    }
+
+    .top p {
+        margin-right: 10vw;
+    }
+
+    .top p img {
+        display: none;
+    }
+}
+
+
+.section {
+    margin: 0 12vw 40px 12vw;
+    text-align: justify;
+}
+
+.section h2 {
+    width: 40px;
+    border-bottom: 4px solid white;
+    white-space: nowrap;
+}
+
+.section .element {
+    padding: 5px 10px 5px 150px;
+    position: relative;
+}
+
+.section .element .dates {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    height: 100%;
+}
+
+.section .element .details {
+    display: block;
+    min-height: 30px;
+}
+
+.section.experience .element {
+    margin-bottom: 50px;
+}
+
+.section.experience .element .details {
+    margin-left: 5vw;
+    padding-left: 2vw;
+    border-left: 2px solid white;
+}
+
+.section.experience .element .details .title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section.experience .element .dates {
+    width: 12vw;
+}
+
+.section.experience .element .dates .start {
+    position: absolute;
+    bottom: 20px;
+}
+
+.section.experience .element .details .title::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.section.experience .element .details .infos {
+    margin-left: 20px;
+}
+
+.section.experience .element .details .infos span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section.experience .element .details .infos span::before {
+    content: "> ";
+}
+
+.section.experience .element .details .infos span::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.dates .start, .dates .end {
+    color: var(--primary-color);
+}
+
+.section.experience .dates .start::after {
+    content: " >\a";
+    white-space: pre;
+}
+
+.section.experience .dates .end::before {
+    content: "> ";
+}
+
+a.link {
+    box-shadow: inset 0 0 0 0;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a.link:hover {
+    box-shadow: inset 200px 0 0 0 var(--dark-color);
+}
